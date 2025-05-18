@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #ffffff;
+  padding: 40px 20px;
+  width: 300px;
+  box-shadow: 4px 0 8px rgba(0,0,0,0.2);
+  border-right: 5px solid #4facfe;
+}
+
+.sidebar h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #4facfe;
+}
+
+.sidebar .contact p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.sidebar section {
+  margin-top: 30px;
+}
+
+.sidebar section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #43cea2;
+}
+
+.sidebar ul {
+  padding-left: 20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.main {
+  flex: 1;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 0 12px 12px 0;
+}
+
+.main section {
+  margin-bottom: 30px;
+}
+
+.main h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #4facfe;
+  border-bottom: 2px solid #4facfe;
+  padding-bottom: 5px;
+}
+
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #43cea2;
+}
+
+.experience p, .experience ul {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+}
+
+.experience ul {
+  padding-left: 20px;
+}
+
+.experience ul li {
+  margin-bottom: 5px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 5px solid #4facfe;
+  }
+
+  .main {
+    border-radius: 0 0 12px 12px;
+  }
+}
